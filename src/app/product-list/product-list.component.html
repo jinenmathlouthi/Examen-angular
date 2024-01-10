@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <button id="add-btn">Ajouter un Produit</button>
+    <input id="search product" (keypress)="searchproduct()" type="text"  placeholder="enter product name here">
+</div>
+<div class="container-fluid">
+    <div class="product-card" *ngFor="let product of productList">
+   {{product.id}}
+   <h6>{{product.name}}</h6>
+   <h6>{{ product.brand }}</h6>
+   <h6>{{product.description}}</h6>
+   {{product.price}}
+   <img src="assets\images{{product.image}}" >
+   {{product.quantity}}
+  
+</div> 
+
+
